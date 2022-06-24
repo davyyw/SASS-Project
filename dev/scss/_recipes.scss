@@ -1,0 +1,51 @@
+@use "variables" as *;
+
+
+.recipes-section h2{
+    font-family: "Roboto Condensed";
+    background-color: $brand-color2;
+    color: white;
+    padding: 0.5rem;
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.recipes-bg{
+    background-color: $recipe-bg-color;
+}
+
+.recipe2{
+    background-color: $body-bg-color;
+}
+.recipe4{
+    background-color: $body-bg-color;
+    margin-bottom: 1rem  ;
+}
+
+.recipe1{
+    background-color: $wrapper-bg-color;
+}
+.recipe3{
+    background-color: $wrapper-bg-color;
+}
+
+.sidebar-section{
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.recipes-section > div {
+    display: flex;
+    gap: 10px;
+    padding: 0.5rem;
+    align-items: center;
+    font-family: "Roboto Condensed";
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: $text-color-dark;
+    img{
+        border: 1px solid blue;
+        width: 18%;
+    }
+}

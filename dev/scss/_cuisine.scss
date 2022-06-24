@@ -1,0 +1,63 @@
+@use "variables" as *;
+
+.cuisines-section {
+  background-color: $wrapper-bg-color;
+}
+.cuisines-section h2 {
+  font-family: "Roboto Condensed";
+  background-color: $brand-color2;
+  color: white;
+  padding: 0.5rem;
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+.sidebar-section {
+  margin-right: 0.2rem;
+  margin-left: 0.2rem;
+}
+.cuisines-section ul {
+  display: grid;
+  grid-template-columns: 135px 1fr;
+  padding: 0.8rem 0.5rem;
+  gap: 7px;
+  margin: 2;
+  line-height: 1.2rem;
+  list-style: none;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  li {
+    font-family: "Roboto Condensed";
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: black;
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 500px) {
+  .cuisines-section ul {
+    display: grid;
+    grid-template-columns: 135px 135px 1fr;
+  }
+}
+
+@media (min-width: 500px) {
+  .cuisines-section ul {
+    display: grid;
+    grid-template-columns: 135px 135px 1fr;
+  }
+}
+
+@media (min-width: 760px) {
+  .site-main {
+    display: flex;
+    //flex-wrap:wrap;
+    justify-content: center;
+  }
+
+  .cuisines-section ul {
+    display: initial;
+  }
+}

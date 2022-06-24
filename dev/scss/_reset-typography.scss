@@ -1,0 +1,49 @@
+@use "variables" as *;
+// Resets
+
+// Box Sizing Reset
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+// Image Reset
+img {
+  margin-top: 2rem;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    margin-left: 0.5rem;
+}
+
+// Table Reset
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// Remove Margins on the body
+body {
+  margin: 0;
+}
+
+// Typography Styles
+
+
+body {
+  font-family: $body-font;
+  line-height: $line-height;
+}
+
+h1,
+h2,
+h3,
+nav a,
+table {
+  font-family: $heading-font;
+}

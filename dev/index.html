@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/all.css" />
+    <link rel="stylesheet" href="styles/styles.css?cachebuster=1" />
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <header class="site-header" id="site-header">
+        <picture class="site-logo">
+          <source srcset="images/small-logo.jpg" media="(max-width: 330px)" />
+          <img src="images/logo.png" alt="Food Explorer Logo" />
+        </picture>
+
+        <button class="hamburger-menu" id="btn-menu">
+          <img src="images/menu.png" alt="Hamburger Menu Icon" />
+          <span class="hamburger-content" tabindex="1">
+            <span class="sr-only">Menu</span>
+            <span class="bar" id="bar"></span>
+          </span>
+        </button>
+      </header>
+      <nav id="main-navigation">
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="search" placeholder="Search.." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <ul>
+          <li><a href="#0">Home</a></li>
+          <li><a href="#0">About</a></li>
+          <li><a href="#0">Reviews</a></li>
+          <li><a href="#0">Recipes</a></li>
+          <li><a href="#0">Contact</a></li>
+        </ul>
+        <div class="brand-icons">
+          <span class="icon1"
+            ><i class="fa-brands fa-facebook-f top top1"></i
+          ></span>
+          <span class="icon2"
+            ><i class="fa-brands fa-google top top2"></i
+          ></span>
+          <span class="icon3"
+            ><i class="fa-brands fa-twitter top top3"></i
+          ></span>
+          <span class="icon4"
+            ><i class="fa-brands fa-facebook-f bottom bottom1"></i
+          ></span>
+          <span class="icon5"
+            ><i class="fa-brands fa-google bottom bottom2"></i
+          ></span>
+          <span class="icon6"
+            ><i class="fa-brands fa-twitter bottom bottom3"></i
+          ></span>
+        </div>
+      </nav>
+      <main class="site-main" id="site-main">
+        <div class="main-container">
+          <section class="top-section">
+            <div class="gallery-item">
+              <picture>
+                <source
+                srcset="images/mussel-small.jpg"
+                media="(max-width: 330px)"
+              />
+                <img src="images/mussel.jpg" alt="Mussels Dish" />
+              </picture>
+              <div>
+                <h2>LOREM IPSUM DOLOR SIT</h2>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="images/salad.jpg" alt="Salad Bowl" />
+              <div>
+                <h2>LOREM, IPSUM DOLOR</h2>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="images/pancake.jpg" alt="Pancakes" />
+              <div>
+                <h2>SIT AMET CONSECTETUR</h2>
+              </div>
+            </div>
+          </section>
+          <section class="bottom-section">
+            <div class="cards">
+              <div class="card1">
+                <h2>LOREM IPSUM DOLOR SIT AMET</h2>
+                <p>Posted by Mike Lee on Sunday, August 25, 2013</p>
+                <img src="images/pasta.jpg" alt="Bowl of Pasta" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis consectetur sint suscipit, obcaecati perferendis.
+                </p>
+                <button class="button">READ MORE...</button>
+              </div>
+              <div class="card2">
+                <h2>VEL, EAQUE QUISAQUAM SIT AMET</h2>
+                <p>Posted by Mike Lee on Monday, July 29, 2013</p>
+                <img src="images/ramen.jpg" alt="Ramen Bowl" />
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Ullam sequi pariatur nostrum quibusdam obcaecati quam?
+                </p>
+                <button class="button">READ MORE...</button>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="sidebar-container">
+          <section class="sidebar-section">
+            <div class="recipes-section">
+              <h2>LATEST RECIPES</h2>
+              <div class="recipe1">
+                <img src="images/lamb-tb.jpg" alt="Lamb Dish" />
+                <p>MET CONSECT TETUR ELIT</p>
+              </div>
+              <div class="recipe2">
+                <img src="images/breakfast-tb.jpg" alt="Breakfast Dish" />
+                <p>ARCHI TECTO DOLORES</p>
+              </div>
+              <div class="recipe3">
+                <img src="images/calamari-tb.jpg" alt="Calamari Dish" />
+                <p>MEXPE DITA CIATIS</p>
+              </div>
+              <div class="recipe4">
+                <img src="images/steak-tb.jpg" alt="Steak Dish" />
+                <p>FUGIAT EAQUE AORE</p>
+              </div>
+            </div>
+            <div class="cuisines-section">
+              <div id="grid">
+                <h2>CUISINES</h2>
+                <ul>
+                  <li>American (95)</li>
+                  <li>Cambodian (3)</li>
+                  <li>Filipino (8)</li>
+                  <li>German (7)</li>
+                  <li>Indian (44)</li>
+                  <li>Jamaican (7)</li>
+                  <li>Korean (120)</li>
+                  <li>Mediterranean (9)</li>
+                  <li>Southern (14)</li>
+                  <li>Asian (33)</li>
+                  <li>Chinese (281)</li>
+                  <li>French (40)</li>
+                  <li>Greek (29)</li>
+                  <li>Italian (60)</li>
+                  <li>Japanese (202)</li>
+                  <li>Malaysian (12)</li>
+                  <li>Mexican (25)</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
+      <script src="scripts/libs/jquery/jquery-3.6.0.min.js"></script>
+      <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
+      <script src="scripts/script.min.js?cachebuster=1"></script>
+      <!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->
+      <footer class="site-footer">
+        <div class="footer">
+          &copy; Natalie Ratayczak, Amrik Grewal, Michiko Hasegawa & David Wang
+          2022 | For Educational Purposes
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
